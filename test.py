@@ -1,12 +1,14 @@
-#coding:utf-8
+# coding:utf-8
 
-#comentaire simple
+# comentaire simple
 
 """commentaire double"""
 
 """ print ("bonjour tous le monde") """
 
-#les variables
+
+
+# les variables
 
 """ age_personne = 15
 age_personne2 = "25"
@@ -16,7 +18,9 @@ print(age_personne2)
 text = "l'age de la personne est {}."
 print(text.format(age_personne)) """
 
-#input
+
+
+# input
 
 """ nom_joueur = input("choisisez votre nom de joueur : ")
 
@@ -29,7 +33,9 @@ prix_ttc = prix_ht + (prix_ht * 20/100)
 
 print("prix ttc =", prix_ttc) """
 
-#les operateurs
+
+
+# les operateurs
 
 """ calcul = 14/2
 calcul = int(calcul)
@@ -46,7 +52,9 @@ niveau_personnage = niveau_personnage +1
 
 print("niveau de personnage", niveau_personnage) """
 
-#les conditions
+
+
+# les conditions
 
 """ indentifiant = "Lucs"
 mots_de_passe = "password1234"
@@ -60,3 +68,53 @@ if user_password == mots_de_passe:
     print("Vous êtes connectés, bienvenue", user_id)
 print("je suis pas dans la condition") """
 
+
+
+#Les boucles
+
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+
+
+
+# les listes
+
+liste1 = [2, 4, 8, 16, 32, 64, 128, 256]
+
+prenoms = ["Jean", "Lea", "Nathan", "Lisa"]
+#print(prenoms[2])
+#print(prenoms[1:3])#affiche l'element l(indice 1 et 3 partant de l'indice 0
+
+prenoms[2] = "Victor"
+#print(prenoms[2])
+
+
+prenom = "mon prenom est Antoine"
+#syntaxe: variable[index]
+print(prenom[2])#affiche la valeur de l'index 2(n), présent dans la variable prenom
+
+
+
+
+# les tuples
+
+
+#les tuples permettent de regrouper plusieurs valeurs séparer par de virgules sans posibilité de les alterer
+t1 = 1, 6, 29
+t1 = "Louis", 29
+t3 = (12, 20, "Lion")
+
+#tuples vide
+vide = ()
+
+#tuples unique
+unique = ("Clark")
+
+#le deballage de sequence
+
+t = ("Jean", 20, ["marche", "pied"])
+nom, age, sport = t
+
+print(t)
